@@ -11,6 +11,21 @@ font-family: 'Roboto Slab', serif;
 html, body {
   height: 100%;
 }
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 body {
   display: flex;
   height: 100%;
@@ -1364,18 +1379,14 @@ ul.extrapages li a {
     height: 38px;
     font-weight: 400;
     border-color: #005fb0 !important;
-    background-color: #005fb0 !important;
-    font-size: 0px;
+    background-color: #005fb0 !important;    
     color: #fff !important;
     border-radius: 0;
 }
 .mailinglist-submit i{
     font-size: 15px;
 }
-@media (min-width: 768px) {
-    .mailinglist-submit {
-        font-size: 0px;
-    }
+@media (min-width: 768px) {    
     .mailinglist-submit i{
         display: block;
     }
@@ -1771,7 +1782,7 @@ span.freeshipping {
 	}
 }
 
-.products-section h2 {
+.products-section h2,.products-section h1 {
 	display: block;
 	background: none;
 	text-align: center;
@@ -1788,7 +1799,7 @@ span.freeshipping {
     .products-section h2 span{
     }
 @media(max-width: 991px) {
-	.products-section h2 {
+	.products-section h2,.products-section h1 {
 		font-size: 36px;
 	}
 }
@@ -2040,7 +2051,7 @@ span.freeshipping {
         left: 0;
         max-height: 98%;
     }
-    .products-section h2, .home-page-content .category-header h3 {
+    .products-section h2, .home-page-content .category-header h3,.products-section h1 {
         font-size: 24px;
 		margin-bottom: 15px;
     }
