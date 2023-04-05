@@ -7,7 +7,7 @@
                     <div class="homeCarousel flexslider" data-animation="[hc_effect]" data-slideshowspeed="[hc_delay]">
                         <ul class="slides">
                             <!--START: carousel-->
-                            <li><a href="[link]"><img src="[image]" alt="[image]" /></a></li>
+                            <li><a href="[link]"><img src="/cdn-cgi/image/format=auto/[image]" alt="[image]" class="img-responsive" width="1920" height="650" /></a></li>
                             <!--END: carousel-->
                         </ul>
                     </div>
@@ -17,44 +17,6 @@
         </div>
     </section>
 	
-	<section id="Promos" class="promo-banners hidden">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<a href="#">
-						<div class="promo-img">
-							<img src="/assets/images/promos/promo1.jpg" class="img-responsive img" alt="promo1" />
-							<div class="btn btn-default">Collection</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6">
-					<a href="#">
-						<div class="promo-img">
-							<img src="/assets/images/promos/promo2.jpg" class="img-responsive img" alt="promo2" />
-							<div class="btn btn-default">Collection</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6">
-					<a href="#">
-						<div class="promo-img">
-							<img src="/assets/images/promos/promo3.jpg" class="img-responsive img" alt="promo3" />
-							<div class="btn btn-default">Collection</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6">
-					<a href="#">
-						<div class="promo-img">
-							<img src="/assets/images/promos/promo4.jpg" class="img-responsive img" alt="promo4" />
-							<div class="btn btn-default">Collection</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<!--START: CATEGORY_HEADER-->
 	<section class="category-header content-section">
@@ -150,7 +112,7 @@
 					<div class="post-image">
 						<div class="post-image-container">
 							<a href="[pagename]" title="[subject]">  
-								<img src="[post_image]" alt="[subject]" class="img-responsive" />
+								<img src="/cdn-cgi/image/format=auto/[post_image]" alt="[subject]" class="img-responsive" />
 							</a>
 						</div>
 					</div>			            
@@ -169,6 +131,7 @@
 								[post_date]
 							</div>
 							<!--START: read-more-->
+
 							<div class="post-readmore">
 								<a href="[pagename]" title="[subject]" class="btn btn-default">[blog_read-more]</a>
 							</div>
@@ -181,18 +144,6 @@
 		</div>
 	</div>
     <!--END: HOMEPAGE_BLOGS-->
-
-	<section class="promo-banners hidden">
-		<div class="container-fluid">
-			<div class="row">
-				<a href="#" role="link">
-					<div class="promo-img">
-						<img src="/assets/images/full-banner.jpg" class="img-responsive img" alt="full-banner" />
-					</div>
-				</a>
-			</div>
-		</div>
-	</section>
 
 	<!--START: CATEGORY_FOOTER-->
 	<section class="category-footer content-section">
@@ -267,6 +218,19 @@
 <!--END: template_scripts-->
 
 <!--START: template_styles-->
-<link rel="stylesheet" href="/assets/templates/common-core/lib/flexslider/flexslider.css" type="text/css" media="screen" />
-<link href="assets/templates/common-core/lib/contentbuilder/minimalist-blocks/content.min.css" rel="stylesheet" type="text/css" />
+<link
+    rel="preload stylesheet"
+    href="/assets/templates/common-core/lib/flexslider/flexslider.css"
+    as="style"
+    media="screen"
+    onload="this.onload=null;this.rel='stylesheet'"
+/>
+<noscript>
+    <link
+        href="/assets/templates/common-core/lib/flexslider/flexslider.css"
+        rel="stylesheet"
+        type="text/css"
+        media="screen"
+    />
+</noscript>
 <!--END: template_styles-->
