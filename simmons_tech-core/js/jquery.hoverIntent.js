@@ -206,7 +206,7 @@ jQuery(document).ready(function () {
 //    		location.href = this.href;
     	});
     }
-	if (respWidth < 767) {
+	if (respWidth < 768) {
 
     	jQuery('.navbar-nav li > a').click(function () {
     		location.href = this.href;
@@ -417,3 +417,6 @@ jQuery(function () {
         }
     });
 });
+setTimeout(function(){
+      $('.antiCls').css("visibility", "visible");
+  }, 800);
