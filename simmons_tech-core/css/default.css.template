@@ -35,7 +35,7 @@ body {
 footer {
   flex-shrink: 0;
 }
-
+#mobSearch{display:none !important}
 .product-items.productList .product-item .product-content {
     text-align: left;
 }
