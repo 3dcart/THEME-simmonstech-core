@@ -1314,7 +1314,24 @@ ul.extrapages li a {
     text-transform: none;
     color: #[footer_text_color];
 }
-
+.mailing_social_group {
+    display: flex;
+    gap: 15px;
+	flex-flow: column;
+    justify-content: center;
+	text-align: center;
+}
+.mailing_social_group > .mailist-box {
+}
+@media(min-width: 992px) {
+	.mailing_social_group {
+		flex-flow: row;
+		justify-content: space-between;
+	}
+	.mailing_social_group > .mailist-box {
+		width: 50%;
+	}
+}
 .newsletter {
     background: #fff;
     color: #fff;
@@ -1475,7 +1492,7 @@ ul.social-icons li.social-icons-label {
 .social-icons {
     width: auto;
     float: none;
-    margin: 15px 0 0 0;
+    margin: 0px 0 0 0;
     padding: 0 !important;
     text-align: center;
     color: #fff;
@@ -2071,7 +2088,7 @@ span.freeshipping {
     .mailinglist-input.form-control {
     }
     .social-icons {
-        margin: 25px auto 15px auto;
+        margin: 0px auto;
 
         text-align: center;
         width: 100%;
